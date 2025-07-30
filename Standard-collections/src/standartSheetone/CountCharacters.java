@@ -11,7 +11,7 @@ public class CountCharacters {
     public static void main(String[] args) {
          Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
-        String value = scanner.next();
+        String value = scanner.nextLine();
         
         // Convert string to char array and sort it
         char[] chars = value.toCharArray();
@@ -22,6 +22,8 @@ public class CountCharacters {
         for (char c : chars) {
             arr[c]++;
         }
+        
+        
         
         // Print character frequencies (only once per character)
         System.out.println("Character frequencies:");
